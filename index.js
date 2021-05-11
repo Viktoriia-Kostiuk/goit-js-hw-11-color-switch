@@ -23,7 +23,7 @@ startEl.addEventListener('click', makeColor);
 
 function makeColor() {
   changeColor = setInterval(() => {
-    bodyEl.style.backgroundColor = colors[randomIntegerFromInterval(0, 5)];
+    bodyEl.style.backgroundColor = colors[randomIntegerFromInterval(0, colors.length)];
   }, 1000);
 
   startEl.disabled = true;
